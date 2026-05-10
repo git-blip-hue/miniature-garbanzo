@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>miniature-garbanzo</title>
+  <meta name="description" content="miniature-garbanzo — tiny experiments, tiny delights." />
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <!-- tiny garbanzo SVG logo -->
+        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <circle cx="12" cy="12" r="9" fill="#F6B042"/>
+          <circle cx="9" cy="10" r="1.4" fill="#6B3E00"/>
+          <circle cx="15" cy="10" r="1.4" fill="#6B3E00"/>
+          <path d="M8 15c1.5-1 4.5-1 6 0" stroke="#6B3E00" stroke-width="0.9" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">miniature-garbanzo</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="btn small">Theme</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">tiny experiments, tidy delights</h1>
+        <p class="hero-sub">A little playground for micro-projects, demos, and curiosities — handcrafted and lightweight.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#features">Explore</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About miniature-garbanzo</h2>
+      <p>miniature-garbanzo is a small collection of experiments — UI snippets, tiny games, helpful utils, and playful components. Everything here is intentionally compact and easy to read.</p>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Features</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Lightweight</h3>
+          <p>Small, dependency-free code that loads fast and is easy to fork.</p>
+        </article>
+        <article class="card">
+          <h3>Accessible</h3>
+          <p>Built with keyboard and screen-reader friendliness in mind.</p>
+        </article>
+        <article class="card">
+          <h3>Playful</h3>
+          <p>Micro-demos and experiments for learning and inspiration.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container showcase">
+      <h2>Showcase</h2>
+      <div class="gallery" id="gallery">
+        <div class="tile">Color Picker</div>
+        <div class="tile">Mini Game</div>
+        <div class="tile">SVG Art</div>
+        <div class="tile">Utilities</div>
+      </div>
+      <p class="muted">Click a tile for an interactive demo (placeholder).</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Your email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Say hi..." required></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+        <p id="form-status" class="muted" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> miniature-garbanzo — made with care.</small>
+      <div class="social">
+        <a href="https://github.com/git-blip-hue/miniature-garbanzo" target="_blank" rel="noopener">Repo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/script.js" defer></script>
+</body>
+</html>
